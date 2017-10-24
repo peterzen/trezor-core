@@ -18,7 +18,6 @@ from trezor.messages import OutputScriptType, InputScriptType, FailureType
 from apps.common import address_type
 from apps.common import coins
 
-
 # Machine instructions
 # ===
 
