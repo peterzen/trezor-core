@@ -1,6 +1,6 @@
 [submodule "vendor/trezor-crypto"]
 	path = vendor/trezor-crypto
-	url = https://github.com/trezor/trezor-crypto.git
+url=https://github.com/peterzen/trezor-crypto.git
 [submodule "vendor/trezor-qrenc"]
 	path = vendor/trezor-qrenc
 	url = https://github.com/trezor/trezor-qrenc.git
@@ -12,7 +12,7 @@
 	url = https://github.com/trezor/norcow.git
 [submodule "vendor/trezor-common"]
 	path = vendor/trezor-common
-	url = https://github.com/trezor/trezor-common.git
+url=https://github.com/peterzen/trezor-common.git
 [submodule "vendor/nanopb"]
 	path = vendor/nanopb
 	url = https://github.com/nanopb/nanopb.git
