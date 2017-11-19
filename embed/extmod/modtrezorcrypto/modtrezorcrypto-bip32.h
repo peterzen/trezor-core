@@ -212,6 +212,23 @@ STATIC mp_obj_t mod_trezorcrypto_HDNode_address(mp_obj_t self, mp_obj_t version)
 }
 STATIC MP_DEFINE_CONST_FUN_OBJ_2(mod_trezorcrypto_HDNode_address_obj, mod_trezorcrypto_HDNode_address);
 
+/// def decred_address(self, version: int) -> str:
+///     '''
+///     Compute a base58-encoded Decred address string from the HD node.
+///     '''
+STATIC mp_obj_t mod_trezorcrypto_HDNode_decred_address(mp_obj_t self, mp_obj_t version) {
+    mp_obj_HDNode_t *o = MP_OBJ_TO_PTR(self);
+
+    uint32_t v = mp_obj_get_int_truncated(version);
+    vstr_t vstr;
+    vstr_init(&vstr, ADDRESS_MAXLEN);
+
+    decred_hdnode_get_address(&o->hdnode, v, vstr.buf, vstr.alloc);
+    vstr.len = strlen(vstr.buf);
+    return mp_obj_new_str_from_vstr(&mp_type_str, &vstr);
+}
+STATIC MP_DEFINE_CONST_FUN_OBJ_2(mod_trezorcrypto_HDNode_decred_address_obj, mod_trezorcrypto_HDNode_decred_address);
+
 STATIC const mp_rom_map_elem_t mod_trezorcrypto_HDNode_locals_dict_table[] = {
     { MP_ROM_QSTR(MP_QSTR_derive), MP_ROM_PTR(&mod_trezorcrypto_HDNode_derive_obj) },
     { MP_ROM_QSTR(MP_QSTR_derive_path), MP_ROM_PTR(&mod_trezorcrypto_HDNode_derive_path_obj) },

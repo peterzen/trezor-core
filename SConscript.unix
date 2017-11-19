@@ -51,6 +51,17 @@ SOURCE_MOD += [
     'embed/extmod/modtrezorcrypto/trezor-crypto/secp256k1.c',
     'embed/extmod/modtrezorcrypto/trezor-crypto/sha2.c',
     'embed/extmod/modtrezorcrypto/trezor-crypto/sha3.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/blake256.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/decred.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/modm-donna-32bit.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/ed25519-sha3.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/ed25519-keccak.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/ed25519-donna-basepoint-table.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/ed25519-donna-impl-base.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/ed25519-donna-32bit-tables.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/curve25519-donna-32bit.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/curve25519-donna-helpers.c',
+    'embed/extmod/modtrezorcrypto/trezor-crypto/ed25519-donna/curve25519-donna-scalarmult-base.c',
 ]
 
 # modtrezorio
