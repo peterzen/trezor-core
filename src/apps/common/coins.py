@@ -1,7 +1,7 @@
 from trezor.messages.CoinType import CoinType
 
-# the following list is generated using tools/coins-gen.py
-# do not edit manually!
+# the following list is generated using tools/codegen/gen_coins.py
+# do not edit it manually!
 COINS = [
     CoinType(
         coin_name='Bitcoin',
@@ -121,6 +121,30 @@ COINS = [
         xpub_magic=0x043587cf,
         xprv_magic=0x04358394,
         bip44=1,
+        segwit=False,
+    ),
+    CoinType(
+        coin_name='Decred',
+        coin_shortcut='DCR',
+        address_type=1855,
+        address_type_p2sh=1818,
+        maxfee_kb=100000000,
+        signed_message_header='Decred Signed Message:\n',
+        xpub_magic=0x02fda926,
+        xprv_magic=0x02fda4e8,
+        bip44=20,
+        segwit=False,
+    ),
+    CoinType(
+        coin_name='DecredTestnet',
+        coin_shortcut='DCRT',
+        address_type=3873,
+        address_type_p2sh=3836,
+        maxfee_kb=100000000,
+        signed_message_header='Decred Signed Message:\n',
+        xpub_magic=0x043587d1,
+        xprv_magic=0x04358397,
+        bip44=11,
         segwit=False,
     ),
 ]
