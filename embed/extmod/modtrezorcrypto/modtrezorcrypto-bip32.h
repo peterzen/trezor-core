@@ -243,6 +243,7 @@ STATIC const mp_rom_map_elem_t mod_trezorcrypto_HDNode_locals_dict_table[] = {
     { MP_ROM_QSTR(MP_QSTR_private_key), MP_ROM_PTR(&mod_trezorcrypto_HDNode_private_key_obj) },
     { MP_ROM_QSTR(MP_QSTR_public_key), MP_ROM_PTR(&mod_trezorcrypto_HDNode_public_key_obj) },
     { MP_ROM_QSTR(MP_QSTR_address), MP_ROM_PTR(&mod_trezorcrypto_HDNode_address_obj) },
+    { MP_ROM_QSTR(MP_QSTR_decred_address), MP_ROM_PTR(&mod_trezorcrypto_HDNode_decred_address_obj) },
 };
 STATIC MP_DEFINE_CONST_DICT(mod_trezorcrypto_HDNode_locals_dict, mod_trezorcrypto_HDNode_locals_dict_table);
 
